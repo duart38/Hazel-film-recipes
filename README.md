@@ -6,6 +6,10 @@ Hazel" in its Recipes tab. Edit a copy of one there to add it to your library, a
 the camera's recipe slots like any other recipe. A change merged here reaches the app the next
 time it starts, with no app update; offline, the app keeps the copy it last read.
 
+To put Hazel on the camera, see [Hazel-firmware](https://github.com/duart38/Hazel-firmware). It
+also works without the app: copy a recipe file onto the memory card as `HAZEL/recipes/C1.txt`
+(up to `C7.txt`, one per slot), and pick it on the camera under Settings › Extras.
+
 There are no sample pictures here on purpose: try a recipe on your own photos in the app.
 
 ## The recipes
