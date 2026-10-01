@@ -17,8 +17,9 @@ ROOT = Path(__file__).resolve().parent.parent
 RECIPES = ROOT / "recipes"
 INDEX = ROOT / "index.json"
 # The camera stores the recipe with every photo in a fixed 1024-byte record: the name line plus the
-# settings, without the other note lines.
-SIDECAR_BYTES = 1024
+# settings, without the other note lines. Up to 110 of those bytes are the camera's own (photo, time,
+# grain seed), which leaves 914. The app refuses a recipe over this, counting the same way.
+SIDECAR_BYTES = 1024 - 110
 # Film stock names are fine; company names are trademarks and stay out of recipe names.
 COMPANY_NAMES = re.compile(r"\b(kodak|fuji|fujifilm|hasselblad|ilford|agfa|polaroid|leica)\b", re.IGNORECASE)
 SETTING = re.compile(r"^\s*([a-z_]+)\s*=\s*\S")
@@ -37,7 +38,7 @@ def entry(path):
     name = lines[0][2:].strip()
     notes = [l[1:].strip() for l in lines[1:] if l.startswith("#")]
     keys = sorted({m.group(1) for l in lines if not l.startswith("#") and (m := SETTING.match(l))})
-    stored = "".join(l + "\n" for i, l in enumerate(lines) if i == 0 or not l.startswith("#"))
+    stored = "".join(l + "\n" for i, l in enumerate(text.split("\n")) if i == 0 or not l.startswith("#"))
     if path.stem != slug(name):
         problems.append(f"{path.name}: file name should be {slug(name)}.txt for '{name}'")
     if COMPANY_NAMES.search(name):

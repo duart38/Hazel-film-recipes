@@ -1,8 +1,10 @@
 # Hazel film recipes
 
-Film-simulation recipes for Hazel, the film-look engine for the X1D-50c. The plan is for the Hazel
-app on the Mac and iPad to list these and add the ones you pick to your library, from where they
-go to the camera's recipe slots like any other recipe. Until then, copy a file into the app.
+Film-simulation recipes for Hazel, the film-look engine for the X1D-50c. The Hazel app on the Mac
+and iPad reads this collection each time it starts: these are the recipes under "Included with
+Hazel" in its Recipes tab. Edit a copy of one there to add it to your library, and from there to
+the camera's recipe slots like any other recipe. A change merged here reaches the app the next
+time it starts, with no app update; offline, the app keeps the copy it last read.
 
 There are no sample pictures here on purpose: try a recipe on your own photos in the app.
 
@@ -44,9 +46,12 @@ grain = 0.35
    (`Gold 200` is `recipes/gold-200.txt`).
 2. Run `python3 tools/build_index.py` and commit `index.json` with it.
 
-The same script checks every pull request. It refuses a recipe whose settings don't fit the
-1024 bytes the camera keeps with every photo, and a name with a company name in it. Film stock
-names are fine; say "Inspired by ..." in a note for the rest.
+The same script checks every pull request. It refuses a recipe whose name and settings don't fit
+the 914 bytes the camera has for a recipe in the record it keeps with every photo, and a name with
+a company name in it. Film stock names are fine; say "Inspired by ..." in a note for the rest.
 
-`index.json` is what the app reads: each recipe's name, description, notes, file, and the settings
-it uses, so an older app can tell when a recipe needs a newer version.
+`index.json` is what the app reads: each recipe's name, file and checksum, plus its description,
+notes and the settings it uses. The app skips a recipe whose file doesn't match its checksum, whose
+first line isn't its name, or that is too long for the camera, and keeps its last good copy. A
+recipe using a setting the app doesn't know yet shows as "needs a newer Hazel" instead of looking
+wrong.
