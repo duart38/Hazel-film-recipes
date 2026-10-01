@@ -1,0 +1,8 @@
+# Soft pastel
+# Light, low-contrast and slightly soft.
+saturation = -0.15
+contrast = -0.35
+shadows = 0.4
+highlights = 0.2
+shift_red = 0.1
+sharpness = -0.3
