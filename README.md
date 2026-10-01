@@ -20,6 +20,7 @@ There are no sample pictures here on purpose: try a recipe on your own photos in
 | Warm portrait | Warm, soft colour with golden skin. Inspired by Kodak Portra 400 |
 | Faded chrome | Quiet colour, deep shadows, soft highlights |
 | Soft pastel | Light, low-contrast and slightly soft |
+| Neutral | The camera's own picture: a slot with no look |
 | Silver screen | Deep, cinematic black and white with fine grain. Inspired by the black and white scenes of Oppenheimer |
 | Gritty black and white | Hard black and white with coarse grain and strong local contrast |
 | Red filter black and white | Dark skies and light skin, as with a red filter on the lens |

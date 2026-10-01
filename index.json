@@ -70,6 +70,16 @@
       "sha256": "2cbc2e257b98838237f9931d26c333929fa2e47b6dbbe8658eb98080fd823164"
     },
     {
+      "name": "Neutral",
+      "file": "recipes/neutral.txt",
+      "description": "The camera's own picture.",
+      "notes": [],
+      "black_and_white": false,
+      "keys": [],
+      "bytes": 38,
+      "sha256": "a192c8f14611fb33a434154a42047d259070215bf6f69cc8e436bd1a5a8c6d88"
+    },
+    {
       "name": "Red filter black and white",
       "file": "recipes/red-filter-black-and-white.txt",
       "description": "Dark skies and light skin, as with a red filter on the lens.",
