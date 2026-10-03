@@ -17,6 +17,7 @@ There are no sample pictures here on purpose: try a recipe on your own photos in
 | Recipe | Look |
 | --- | --- |
 | Gold 200 | Warm, golden consumer-film colour with cyan-blue skies. Inspired by Kodak Gold 200 |
+| Tungsten 800T | Night-time cinema colour: red halation around lights, teal shadows, rich reds. Inspired by CineStill 800T |
 | Warm portrait | Warm, soft colour with golden skin. Inspired by Kodak Portra 400 |
 | Faded chrome | Quiet colour, deep shadows, soft highlights |
 | Soft pastel | Light, low-contrast and slightly soft |
@@ -25,8 +26,8 @@ There are no sample pictures here on purpose: try a recipe on your own photos in
 | Gritty black and white | Hard black and white with coarse grain and strong local contrast |
 | Red filter black and white | Dark skies and light skin, as with a red filter on the lens |
 
-Gold 200 and Silver screen were matched against real pictures of the look they copy (scans of the
-film, stills from the film), measuring tones, grain and colour object by object. Gold 200 and Warm
+Gold 200, Silver screen and Tungsten 800T were matched against real pictures of the look they copy
+(scans of the film, stills from the film), measuring tones, grain and colour object by object. Gold 200 and Warm
 portrait started from Fuji X Weekly's recipes of the same inspiration, ported to Hazel's settings.
 
 ## A recipe file

@@ -139,6 +139,36 @@
       "sha256": "afc71f1e2f41e6327dac8beb76595b59af944fb9825257607f24b986031d25f4"
     },
     {
+      "name": "Tungsten 800T",
+      "file": "recipes/tungsten-800t.txt",
+      "description": "Night-time cinema colour: red halation around lights, teal shadows, rich reds, deep blacks, strong grain. Inspired by CineStill 800T.",
+      "notes": [
+        "On the camera: white balance Tungsten or Auto under street and shop lights; Daylight in daylight turns it cool and blue, as the film does.",
+        "The glow comes from blown-out lights in the frame: lamps, neon, headlights, a bright window."
+      ],
+      "black_and_white": false,
+      "keys": [
+        "brightness",
+        "contrast",
+        "dynamic_range",
+        "grade_highlights",
+        "grade_shadows",
+        "grain",
+        "grain_size",
+        "halation",
+        "highlights",
+        "mix_aqua",
+        "mix_blue",
+        "mix_green",
+        "mix_red",
+        "mix_yellow",
+        "saturation",
+        "shadows"
+      ],
+      "bytes": 706,
+      "sha256": "54d1fdffc59cad3006dff3d8807586304027621b0ac0cf596004f759a84615f6"
+    },
+    {
       "name": "Warm portrait",
       "file": "recipes/warm-portrait.txt",
       "description": "Warm, soft colour with golden skin. Inspired by Kodak Portra 400, by way of Fuji X Weekly's recipe of the same inspiration.",
