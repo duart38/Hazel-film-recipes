@@ -24,14 +24,14 @@
       "description": "Warm, golden consumer-film colour: honey highlights, golden skin and leaves, cyan-blue skies, fine grain. Inspired by Kodak Gold 200, by way of Fuji X Weekly's recipe of the same inspiration.",
       "notes": [
         "On the camera: white balance Daylight, exposure 0 to +2/3 (more for the airy, scanned look).",
-        "Matched against scans of the real film; under lamplight it turns amber, as daylight film does."
+        "Matched against 120 and 35mm scans of the real film: deep blacks, punchy reds; under lamplight it turns amber, as daylight film does."
       ],
       "black_and_white": false,
       "keys": [
         "brightness",
         "colour_depth",
+        "contrast",
         "dynamic_range",
-        "fade",
         "grade_highlights",
         "grade_shadows",
         "grain",
@@ -48,8 +48,8 @@
         "shift_blue",
         "shift_red"
       ],
-      "bytes": 767,
-      "sha256": "199b0ed700726cf2d73d782dcd9710b1a20e20d2d43413896aa0e884b89f11d2"
+      "bytes": 811,
+      "sha256": "1b2afc5d1172eefd4405e8cdacb236e6ff6a4e3cb42628b0ec2e5c78cb775faa"
     },
     {
       "name": "Gritty black and white",
